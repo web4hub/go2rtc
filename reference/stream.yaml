@@ -12,3 +12,7 @@ rtsp:
 
 webrtc:
   listen: ":0000" # external TCP/UDP port
+service: telegram_bot.send_video
+data:
+  url: http://localhost:1984/api/stream.mp4?src=camera1&mp4=flac&duration=5&filename=record.mp4  # duration in seconds
+  target: https://t.me/papperweb
