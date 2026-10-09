@@ -1,0 +1,6 @@
+streams:
+  # auto select hardware encoder
+  camera1_hw: ffmpeg:rtsp://rtsp:12345678@192.168.1.123/av_stream/ch0#video=h264#hardware
+  
+  # manual select hardware encoder (vaapi, cuda, v4l2m2m, dxva2, videotoolbox)
+  camera1_vaapi: ffmpeg:rtsp://rtsp:12345678@192.168.1.123/av_stream/ch0#video=h264#hardware=vaapi
