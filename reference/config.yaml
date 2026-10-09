@@ -4,3 +4,11 @@ streams:
   dahua:
     - rtsp://admin:password@192.168.1.123/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
     - ffmpeg:rtsp://admin:password@192.168.1.123/cam/realmonitor?channel=1&subtype=0#audio=opus
+api:
+  listen: "127.0.0.1:1980" # localhost
+
+rtsp:
+  listen: "127.0.0.1:8554" # localhost
+
+webrtc:
+  listen: ":8555" # external TCP/UDP port
