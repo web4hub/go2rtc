@@ -1,0 +1,3 @@
+PCM/xxx => PCMA/8000 => WebRTC
+PCMA/xxx => PCMA/8000 => WebRTC
+PCMU/xxx => PCMU/8000 => WebRTC
