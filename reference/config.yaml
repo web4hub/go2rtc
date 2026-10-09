@@ -1,0 +1,3 @@
+homeassistant:
+  allowlist_external_dirs:
+    - "/media"
