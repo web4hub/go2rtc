@@ -1,2 +1,6 @@
 streams:
   hall-camera: rtsp://admin:password@192.168.1.123/cam/realmonitor?channel=1&subtype=0
+  streams:
+  dahua:
+    - rtsp://admin:password@192.168.1.123/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - ffmpeg:rtsp://admin:password@192.168.1.123/cam/realmonitor?channel=1&subtype=0#audio=opus
