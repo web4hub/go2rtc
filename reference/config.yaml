@@ -1,3 +1,16 @@
 homeassistant:
   allowlist_external_dirs:
     - "/media"
+app:
+  # use only allowed modules
+  modules: [api, rtsp, webrtc, exec, ffmpeg, mjpeg]
+
+api:
+  # use only allowed API paths
+  allow_paths: [/api, /api/streams, /api/webrtc, /api/frame.jpeg]
+  # enable auth for localhost (used together with username and password)
+  local_auth: true
+
+exec:
+  # use only allowed exec paths
+  allow_paths: [ffmpeg]
